@@ -19,7 +19,7 @@ export const createNewChat = async (payload: any) => {
 
 export const getChatsByUserId = async (userId: string) => {
   try {
-    const response = await ChatModel.find({ user: userId });
+    const response = await ChatModel.find({ user: userId }).sort({ createdAt: -1 });
     return {
       data: JSON.parse(JSON.stringify(response)),
       success: true,
