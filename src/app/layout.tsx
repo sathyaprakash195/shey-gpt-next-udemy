@@ -7,7 +7,7 @@ import CustomLayout from "@/custom-layout";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Shey GPT - Local",
+  title: "Shey GPT - AI Text Generator",
   description: "An AI that generates text based on your input",
 };
 
